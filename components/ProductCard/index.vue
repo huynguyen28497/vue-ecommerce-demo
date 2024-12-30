@@ -1,5 +1,5 @@
 <template>
-    <v-card rounded="lg" class="root">
+    <v-card rounded="lg" class="root" @click="$router.push(`/product/${product.id}`)">
         <v-img width="150px" height="150px" :src="product.thumbnail_url" />
         <div class="card-text px-4 mt-2 mb-1">{{ product.name }}</div>
         <v-rating class="px-4 rating" v-if="product.rating_average > 0" :length="5" :model-value="product.rating_average"

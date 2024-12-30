@@ -81,6 +81,7 @@
                     </v-card>
                     <top-deal class="mt-4" />
                     <suggestion class="mt-4" />
+                    <app-footer class="mt-4" />
                 </div>
             </v-container>
         </main>

@@ -6,7 +6,7 @@
             <v-text-field class="px-10" append-inner-icon="mdi-magnify" density="compact"
                 placeholder="Tìm kiếm sản phẩm" variant="solo" hide-details single-line></v-text-field>
             <div class="d-flex ga-2">
-                <v-btn class="ma-2" variant="text">
+                <v-btn class="ma-2" variant="text" @click="navigateTo('/')">
                     <template v-slot:prepend>
                         <v-icon icon="mdi-home" start></v-icon>
                     </template>
