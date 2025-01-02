@@ -54,6 +54,12 @@
                         </div>
                     </div>
                 </v-card>
+                <div class="mt-8">
+                    <h5>Ở đây có sản phẩm bạn thích</h5>
+                    <div class="d-flex mt-4 ga-4 flex-wrap">
+                        <product-card class="product" :product="product" v-for="product in YOUR_PRODUCT_DATA" />
+                    </div>
+                </div>
             </v-container>
         </div>
     </NuxtLayout>
@@ -113,6 +119,12 @@ const addToCart = (product?: IProduct) => {
     color: rgb(255, 66, 78);
 }
 
+.product {
+    width: 150px;
+    height: 320px;
+    min-height: unset;
+    background: white !important;
+}
 
 :deep(.v-field__input) {
     padding: 0 16px;
