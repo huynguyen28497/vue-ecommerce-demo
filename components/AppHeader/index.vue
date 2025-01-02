@@ -24,7 +24,7 @@
                     </template>
                     Đăng nhập
                 </v-btn>
-                <v-btn class="ma-2" variant="text">
+                <v-btn class="ma-2" variant="text" @click="navigateTo('/cart')">
                     <template v-slot:prepend>
                         <v-icon icon="mdi-cart" start></v-icon>
                     </template>
@@ -36,7 +36,7 @@
 </template>
 
 <script setup lang="ts">
-const { cart, account } = useMainStore();
+const { cart, account } = storeToRefs(useMainStore());
 const navigateToLogin = () => {
     navigateTo("/login");
 }

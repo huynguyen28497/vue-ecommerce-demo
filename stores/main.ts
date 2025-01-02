@@ -34,5 +34,8 @@ export const useMainStore = defineStore("websiteStore", {
         this.account = JSON.parse(account);
       }
     },
+    updateCart(cart: ICart[]) {
+      this.cart = cart;
+    },
   },
 });
